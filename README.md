@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# Doctor Finder Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A cross-platform mobile application built with React Native and Firebase to help users find private doctors in their area.
 
-## Get started
+## Developed by
+- **Name:** Bame Junior Noko
+- **Student ID:** NB22000934
+- **Course:** COMP 302 - Data Structures and Algorithms
 
-1. Install dependencies
+## Features
 
-   ```bash
+- Search for doctors by specialty and location
+- View doctor profiles with detailed information
+- Find doctors within 100km of your location on a map
+- Book appointments with doctors
+- Manage your appointment history
+- User authentication (register/login)
+
+## Technologies Used
+
+- React Native / Expo
+- Firebase (Authentication, Firestore, Storage)
+- Google Maps integration
+- Node.js
+
+## Installation and Setup
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies:
+   ```
    npm install
    ```
-
-2. Start the app
-
-   ```bash
+4. Update Firebase configuration in `src/firebase/config.js`
+5. Update `.env` file with your API keys
+6. Start the application:
+   ```
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+DoctorFinderApp/
+├── src/
+│   ├── assets/        # Images, fonts, etc.
+│   ├── components/    # Reusable components
+│   ├── screens/       # Screen components
+│   ├── navigation/    # Navigation setup
+│   ├── firebase/      # Firebase configuration
+│   ├── services/      # API services
+│   ├── hooks/         # Custom hooks
+│   ├── utils/         # Utility functions
+│   └── context/       # Context providers
+├── App.js             # Main application component
+├── babel.config.js    # Babel configuration
+└── app.json           # Expo configuration
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Firebase Collections
 
-## Learn more
+The application uses the following Firestore collections:
 
-To learn more about developing your project with Expo, look at the following resources:
+- **doctors**: Doctor profiles with details like specialty, contact info, and location
+- **users**: User profiles
+- **specialties**: List of medical specialties
+- **reviews**: User reviews of doctors
+- **appointments**: Appointment bookings
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Additional Notes
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This application was developed as part of the COMP 302 Data Structures and Algorithms course assignment.
